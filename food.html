@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+    <link rel="stylesheet" href="food.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <img id="food" src="food.png" alt="" srcset="">
+        <!-- <img id="menu" src="menu.png" alt="" srcset=""> -->
+        <img id="login" src="login.png" alt="" srcset="">
+    </div>
+
+
+
+
+    <ul class="niveau1">
+        <li>
+            MENU
+            <ul class="niveau2">
+                <li>
+                    RECETTES
+                    <ul class="niveau3">
+                        <li id="sucre">Sucré</li>
+                        <li id="sel">Salé</li>
+                    </ul>
+                </li>
+                <li id="art">ARTICLES</li>
+                <li id="be">BIEN ETRE</li>
+
+            </ul>
+        </li>
+    </ul>
+
+    <div id="container"></div>
+
+    <div class="popup" id="formulaire">
+        <form class="form-container">
+            <h1>Créer un compte</h1>
+            <label for="prenom"><b>Prénom</b></label>
+            <input id="firstname" type="text" placeholder="Entrer votre prénom" name="prenom" required>
+            <label for="nom"><b>Nom</b></label>
+            <input id="name" type="text" placeholder="Entrer votre nom" name="nom" required>
+            <label for="email"><b>Email</b></label>
+            <input id="mail" type="text" placeholder="Entrer votre Email" name="email" required>
+            <label for="psw"><b>Mot de passe</b></label>
+            <input id="password" type="password" placeholder="Entrer votre mot de passe" name="psw" required>
+            <button type="submit" class="btn" onclick="newClient()">Valider</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Fermer</button>
+        </form>
+
+
+
+        <script src="foodfront.js"></script>
+</body>
+
+</html>

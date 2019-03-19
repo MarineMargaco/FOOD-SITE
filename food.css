@@ -1,0 +1,119 @@
+body{
+    background-color: beige;
+    height: 1200px;
+}
+#food{
+    height: 60px;
+    width: 500px; 
+    background-color: dimgray;
+    margin-left: 25%;
+    
+}
+
+/* div {
+
+    width: 300px;
+    height: 300px;
+}
+
+#container{
+
+    display:flex;  
+    flex-direction: row;
+   justify-content: center;
+   margin-top:50px;
+   margin-left: 110px;
+   width: 1200px;
+   height: 1000px;
+   flex-wrap: wrap;
+   font-size: 22px;
+}  */ 
+
+#login{
+    height: 80px;
+    width: 80px;
+    float: right;
+}
+
+ul ul {
+    display: none; 
+    position: absolute; 
+    /* left: 140px;  */
+    top: 30px; 
+    margin: 0px; 
+    padding: 0px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+li {
+    float: left;
+    margin-top: 0;
+    list-style-type: none; 
+    position: relative; 
+    width: 140px; 
+    color: whitesmoke;
+    background-color: darkcyan;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid black;
+}
+li:hover ul.niveau2{
+    display: block;
+    
+}
+
+ li li:hover ul.niveau3 {
+     display: block;
+     left: 140px;
+     top:0px;
+     
+ }
+
+
+.popup {
+    display: none;
+    position: relative;
+    top: 50px;
+    left: 400px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 400px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding-top: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+}
+
+.form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-container .cancel {
+    background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
