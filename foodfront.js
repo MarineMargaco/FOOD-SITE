@@ -1,3 +1,4 @@
+
 function afficher(element) {
     element.forEach(function (el) {
 
@@ -22,10 +23,15 @@ function afficher(element) {
 //     $.post("")
 // })
 
+var menu = document.getElementById("food");
+menu.addEventListener("click", function () {
+    container.innerHTML = "";
+});
 
 var sel = document.getElementById("sel");
 sel.addEventListener('click', function () {
     container.innerHTML = "";
+
     $.get("http://localhost:5000/sale", function (response, error) {
         console.log(response);
         afficher(response);
