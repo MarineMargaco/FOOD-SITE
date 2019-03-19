@@ -6,12 +6,12 @@ function afficher(element) {
         food.setAttribute('id', el.name);
         container.appendChild(food);
 
-        var imgFood = document.createElement('div');
-        imgFood.setAttribute('url', el.url);
+        var imgFood = document.createElement('img');
+        imgFood.setAttribute('src', el.url);
         food.appendChild(imgFood);
 
-        var descriptionFood = document.createElement('div');
-        descriptionFood.setAttribute('p', el.description);
+        var descriptionFood = document.createElement('p');
+        descriptionFood.setAttribute('text', el.description);
         food.appendChild(descriptionFood);
 
     })
@@ -25,22 +25,25 @@ function afficher(element) {
 
 var sel = document.getElementById("sel");
 sel.addEventListener('click', function () {
-    $.get("http://localhost:5000/salé", function (response, error) {
-
+    container.innerHTML = "";
+    $.get("http://localhost:5000/sale", function (response, error) {
+        console.log(response);
         afficher(response);
     })
 });
 
 var sucre = document.getElementById("sucre");
 sucre.addEventListener('click', function () {
-    $.get("http://localhost:5000/sucré", function (response, error) {
-
+    container.innerHTML = "";
+    $.get("http://localhost:5000/sucre", function (response, error) {
+        console.log(response);
         afficher(response);
     })
 });
 
 var article = document.getElementById("art");
 article.addEventListener('click', function () {
+    container.innerHTML = "";
     $.get("http://localhost:5000/article", function (response, error) {
 
         afficher(response);
@@ -49,6 +52,7 @@ article.addEventListener('click', function () {
 
 var bien = document.getElementById("be");
 bien.addEventListener('click', function () {
+    container.innerHTML = "";
     $.get("http://localhost:5000/be", function (response, error) {
 
         afficher(response);

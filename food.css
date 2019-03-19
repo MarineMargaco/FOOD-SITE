@@ -10,12 +10,26 @@ body{
     
 }
 
-/* div {
+#container div {
 
     width: 300px;
     height: 300px;
-}
+    margin: 10px;
+    border: 1px solid grey;
+    
+} 
 
+#container img {
+
+    width: 300px;
+    height: 250px;
+} 
+
+#container p{
+
+    font-size: 12px;
+
+}
 #container{
 
     display:flex;  
@@ -27,7 +41,7 @@ body{
    height: 1000px;
    flex-wrap: wrap;
    font-size: 22px;
-}  */ 
+}  
 
 #login{
     height: 80px;
@@ -75,10 +89,10 @@ li:hover ul.niveau2{
 .popup {
     display: none;
     position: relative;
-    top: 50px;
+    top: 10px;
     left: 400px;
     border: 3px solid #f1f1f1;
-    z-index: 9;
+    /* z-index: 9; */
 }
 
 .form-container {

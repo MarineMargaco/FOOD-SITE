@@ -42,13 +42,13 @@ db.serialize(() => {
     });
 })
 
-app.get('/sucré', function (request, response) {
+app.get('/sucre', function (request, response) {
     db.all('SELECT * FROM recettes WHERE recette2_id= 1', function (error, data) {
         response.send(data);
     })
 });
 
-app.get('/salé', function (request, response) {
+app.get('/sale', function (request, response) {
     db.all('SELECT * FROM recettes WHERE recette2_id= 4', function (error, data) {
         response.send(data);
     });
